@@ -40,7 +40,7 @@ Rails.application.configure do
    config.action_mailer.default_url_options = { :host => 'localhost:3000' }
    config.action_mailer.delivery_method = :smtp
    config.action_mailer.raise_delivery_errors = true
-   
+
   # Adds additional error checking when serving assets at runtime.
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.
@@ -48,4 +48,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+ #send email in development mode.
+ config.action_mailer.perform_deliveries = true
 end
