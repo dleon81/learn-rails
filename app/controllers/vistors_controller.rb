@@ -1,1 +1,0 @@
-vistors_controller.rb
