@@ -1,6 +1,6 @@
 class Owner
 	def name
-	 name = 'Diego'
+	 name = 'iPet Chicago'
 	end
 
 	def birthdate

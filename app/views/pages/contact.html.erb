@@ -1,0 +1,17 @@
+<% content_for :title do %>Contact<% end %> 
+<h3>Contact</h3>
+<div class="form">
+	<%= simple_form_for :contact, url: contact_path do |form| %>
+		<%= form.input :name, autofocus: true %>
+		<%= form.input :email %>
+		<%= form.input :neighborhood %>
+		<%= form.input :pet_name %>
+		<%= form.input :breed %>
+		<%= form.input :How_did_you_hear_about_us? %>
+		<%= form.input :Type_of_service_desired %>
+		<%= form.input :if_dog_walking_How_many_days_per_week? %>
+		<%= form.input :additional_info, as: :text %>
+		<%= form.button :submit, 'Submit' , class: 'submit' %>
+	<% end %>
+
+</div>
